@@ -1,3 +1,13 @@
+/*!
+ * @uiw/copy-to-clipboard v1.0.3
+ * Copy to clipboard.
+ * 
+ * Copyright (c) 2018 undefined
+ * https://github.com/uiw-react/copy-to-clipboard.git
+ * 
+ * Licensed under the MIT license.
+ */
+
 function copyTextToClipboard(text, cb) {
   const textArea = document.createElement('textarea');
   //

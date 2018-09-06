@@ -1,5 +1,6 @@
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
+import banner from 'bannerjs';
 import pkg from './package.json';
 
 export default [
@@ -9,7 +10,8 @@ export default [
     output: {
       name: 'copyTextToClipboard',
       file: pkg.browser,
-      format: 'umd'
+      format: 'umd',
+      banner: banner.multibanner(),
     },
     plugins: [
       resolve(), // so Rollup can find `ms`
@@ -27,8 +29,8 @@ export default [
     input: 'src/main.js',
     external: ['ms'],
     output: [
-      { file: pkg.main, format: 'cjs' },
-      { file: pkg.module, format: 'es' }
+      { file: pkg.main, format: 'cjs', banner: banner.multibanner() },
+      { file: pkg.module, format: 'es', banner: banner.multibanner() }
     ]
   }
 ];

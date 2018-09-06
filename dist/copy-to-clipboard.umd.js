@@ -1,3 +1,13 @@
+/*!
+ * @uiw/copy-to-clipboard v1.0.3
+ * Copy to clipboard.
+ * 
+ * Copyright (c) 2018 undefined
+ * https://github.com/uiw-react/copy-to-clipboard.git
+ * 
+ * Licensed under the MIT license.
+ */
+
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :

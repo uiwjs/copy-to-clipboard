@@ -26,6 +26,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "bannerjs": "^1.0.5",
     "rollup": "^0.65.2",
     "rollup-plugin-commonjs": "^9.1.6",
     "rollup-plugin-node-resolve": "^3.4.0"
