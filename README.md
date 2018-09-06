@@ -31,15 +31,10 @@ copyTextToClipboard('test', (isCopy) => {
 Or manually download and link [copy-to-clipboard]() in your HTML, It can also be downloaded via [UNPKG](https://unpkg.com/@uiw/copy-to-clipboard/dist/):
 
 ```html
-<script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+<script src="https://unpkg.com/@uiw/copy-to-clipboard/dist/hotkeys.min.js"></script>
 <script type="text/javascript">
-hotkeys('ctrl+a,ctrl+b,r,f', function(event,handler) {
-  switch(handler.key){
-    case "ctrl+a":alert('you pressed ctrl+a!');break;
-    case "ctrl+b":alert('you pressed ctrl+b!');break;
-    case "r":alert('you pressed r!');break;
-    case "f":alert('you pressed f!');break;
-  }
+copyTextToClipboard('test', (isCopy) => {
+  console.log('isCopy:', isCopy);
 });
 </script>
 ```
