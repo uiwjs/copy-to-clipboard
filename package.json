@@ -1,6 +1,6 @@
 {
   "name": "@uiw/copy-to-clipboard",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Copy to clipboard.",
   "main": "dist/copy-to-clipboard.cjs.js",
   "module": "dist/copy-to-clipboard.esm.js",
@@ -9,7 +9,14 @@
     "build": "rollup -c",
     "dev": "rollup -c -w"
   },
-  "keywords": [],
+  "keywords": [
+    "copy",
+    "text",
+    "clipboard",
+    "browser",
+    "clipboard-copy",
+    "clipboard.js"
+  ],
   "authors": [
     "Kenny Wang <wowohoo@qq.com>"
   ],
