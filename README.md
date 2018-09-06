@@ -31,7 +31,7 @@ copyTextToClipboard('test', (isCopy) => {
 Or manually download and link [copy-to-clipboard](https://unpkg.com/@uiw/copy-to-clipboard/dist/) in your HTML, It can also be downloaded via [UNPKG](https://unpkg.com/@uiw/copy-to-clipboard/dist/):
 
 ```html
-<script src="https://unpkg.com/@uiw/copy-to-clipboard/dist/hotkeys.min.js"></script>
+<script src="https://unpkg.com/@uiw/copy-to-clipboard/dist/copy-to-clipboard.umd.js"></script>
 <script type="text/javascript">
 copyTextToClipboard('test', (isCopy) => {
   console.log('isCopy:', isCopy);
