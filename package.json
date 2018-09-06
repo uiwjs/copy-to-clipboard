@@ -1,6 +1,6 @@
 {
   "name": "@uiw/copy-to-clipboard",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Copy to clipboard.",
   "main": "dist/copy-to-clipboard.cjs.js",
   "module": "dist/copy-to-clipboard.esm.js",
@@ -17,9 +17,11 @@
     "clipboard-copy",
     "clipboard.js"
   ],
-  "authors": [
-    "Kenny Wang <wowohoo@qq.com>"
-  ],
+  "author": {
+    "name": "Kenny Wang",
+    "email": "wowohoo@qq.com",
+    "url": "https://wangchujiang.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/uiw-react/copy-to-clipboard.git"
