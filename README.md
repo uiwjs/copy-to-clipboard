@@ -17,7 +17,7 @@ The likelihood is the element won't even render, not even a flash, so some of th
 You will need Node.js installed on your system.
 
 ```bash
-$ npm i copy-text-to-clipboard
+$ npm i @uiw/copy-to-clipboard
 ```
 
 ```js
