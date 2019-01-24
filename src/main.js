@@ -31,6 +31,7 @@ function copyTextToClipboard(text, cb) {
     const isCopy = !!successful;
     cb && cb(isCopy);
   } catch (err) {
+    cb && cb(false);
     // console.log('Oops, unable to copy');
   }
   document.body.removeChild(el);
