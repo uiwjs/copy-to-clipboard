@@ -1,9 +1,8 @@
-
-
 function copyTextToClipboard(text, cb) {
-  const textArea = document.createElement('textarea');
   //
   // *** This styling is an extra step which is likely not required. ***
+  // 
+  // https://github.com/w3c/clipboard-apis/blob/master/explainer.adoc#writing-to-the-clipboard
   //
   // Why is it here? To ensure:
   // 1. the element is able to have focus and selection.
@@ -17,27 +16,16 @@ function copyTextToClipboard(text, cb) {
   // the web page to copy to the clipboard.
   //
   // Place in top-left corner of screen regardless of scroll position.
-
-  textArea.style = {
-    position: 'fixed',
-    top: '-100px',
-    left: 0,
-    // Ensure it has a small width and height. Setting to 1px / 1em
-    // doesn't work as this gives a negative w/h on some browsers.
-    width: '2em',
-    height: '2em',
-    // We don't need padding, reducing the size if it does flash render.
-    padding: 0,
-    // Clean up any borders.
-    border: 'none',
-    outline: 'none',
-    boxShadow: 'none',
-    // Avoid flash of white box if rendered for any reason.
-    background: 'transparent',
-  };
-  textArea.value = text;
-  document.body.appendChild(textArea);
-  textArea.select();
+  const el = document.createElement('textarea');
+  el.value = text;
+  el.setAttribute('readonly', '');
+  el.style = {
+    position: 'absolute',
+    left: '-9999px',
+  }
+  document.body.appendChild(el);
+  const selected = document.getSelection().rangeCount > 0 ? document.getSelection().getRangeAt(0) : false;
+  el.select();
   try {
     const successful = document.execCommand('copy');
     const isCopy = !!successful;
@@ -45,7 +33,11 @@ function copyTextToClipboard(text, cb) {
   } catch (err) {
     // console.log('Oops, unable to copy');
   }
-  document.body.removeChild(textArea);
-}
+  document.body.removeChild(el);
+  if (selected) {
+    document.getSelection().removeAllRanges();
+    document.getSelection().addRange(selected);
+  }
+};
 
 export default copyTextToClipboard;
