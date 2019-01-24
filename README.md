@@ -1,6 +1,10 @@
 copy text to clipboard
 ---
 
+[![](https://img.shields.io/github/issues/uiw-react/copy-to-clipboard.svg)](https://github.com/uiw-react/copy-to-clipboard/releases)
+[![](https://img.shields.io/github/forks/uiw-react/copy-to-clipboard.svg)](https://github.com/uiw-react/copy-to-clipboard/network)
+[![](https://img.shields.io/github/stars/uiw-react/copy-to-clipboard.svg)](https://github.com/uiw-react/copy-to-clipboard/stargazers)
+[![](https://img.shields.io/github/release/uiw-react/copy-to-clipboard.svg)](https://github.com/uiw-react/copy-to-clipboard/releases)
 
 **This styling is an extra step which is likely not required.**
 
