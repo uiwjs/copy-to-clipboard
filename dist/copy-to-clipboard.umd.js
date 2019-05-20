@@ -1,5 +1,5 @@
 /*!
- * @uiw/copy-to-clipboard v1.0.7
+ * @uiw/copy-to-clipboard v1.0.8
  * Copy to clipboard.
  * 
  * Copyright (c) 2019 Kenny Wang
@@ -11,8 +11,8 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  (global.copyTextToClipboard = factory());
-}(this, (function () { 'use strict';
+  (global = global || self, global.copyTextToClipboard = factory());
+}(this, function () { 'use strict';
 
   function copyTextToClipboard(text, cb) {
     //
@@ -59,4 +59,4 @@
 
   return copyTextToClipboard;
 
-})));
+}));
