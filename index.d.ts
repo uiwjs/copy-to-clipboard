@@ -1,6 +1,6 @@
 
 interface CopyTextToClipboard {
-  (key: string, method: boolean): void
+  (text: string, method?: (isCopy: boolean) => void): void
 }
 
 declare var copyTextToClipboard: CopyTextToClipboard
