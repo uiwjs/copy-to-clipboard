@@ -26,19 +26,19 @@ function copyTextToClipboard(text, cb) {
   document.body.appendChild(el);
   const selected = document.getSelection().rangeCount > 0 ? document.getSelection().getRangeAt(0) : false;
   el.select();
+  let isCopy = false;
   try {
     const successful = document.execCommand('copy');
-    const isCopy = !!successful;
-    cb && cb(isCopy);
+    isCopy = !!successful;
   } catch (err) {
-    cb && cb(false);
-    // console.log('Oops, unable to copy');
+    isCopy = false;
   }
   document.body.removeChild(el);
-  if (selected) {
+  if (selected && document.getSelection) {
     document.getSelection().removeAllRanges();
     document.getSelection().addRange(selected);
   }
+  cb && cb(isCopy);
 };
 
 export default copyTextToClipboard;
