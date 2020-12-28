@@ -1,11 +1,12 @@
 copy text to clipboard
 ---
 
-![](http://jaywcjlove.github.io/sb/status/no-dependencies.svg)
-[![](https://img.shields.io/github/issues/uiwjs/copy-to-clipboard.svg)](https://github.com/uiwjs/copy-to-clipboard/releases)
-[![](https://img.shields.io/github/forks/uiwjs/copy-to-clipboard.svg)](https://github.com/uiwjs/copy-to-clipboard/network)
-[![](https://img.shields.io/github/stars/uiwjs/copy-to-clipboard.svg)](https://github.com/uiwjs/copy-to-clipboard/stargazers)
-[![](https://img.shields.io/github/release/uiwjs/copy-to-clipboard.svg)](https://github.com/uiwjs/copy-to-clipboard/releases)
+[![Build](https://github.com/uiwjs/copy-to-clipboard/workflows/Build/badge.svg)](https://github.com/uiwjs/copy-to-clipboard/actions)
+![No Dependencies](http://jaywcjlove.github.io/sb/status/no-dependencies.svg)
+[![Issues](https://img.shields.io/github/issues/uiwjs/copy-to-clipboard.svg)](https://github.com/uiwjs/copy-to-clipboard/issues)
+[![Forks](https://img.shields.io/github/forks/uiwjs/copy-to-clipboard.svg)](https://github.com/uiwjs/copy-to-clipboard/network)
+[![Stars](https://img.shields.io/github/stars/uiwjs/copy-to-clipboard.svg)](https://github.com/uiwjs/copy-to-clipboard/stargazers)
+[![Releases](https://img.shields.io/github/release/uiwjs/copy-to-clipboard.svg)](https://github.com/uiwjs/copy-to-clipboard/releases)
 
 **This styling is an extra step which is likely not required.**
 
