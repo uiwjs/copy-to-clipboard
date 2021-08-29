@@ -1,21 +1,29 @@
-function copyTextToClipboard(text, cb) {
-  //
-  // *** This styling is an extra step which is likely not required. ***
-  // 
-  // https://github.com/w3c/clipboard-apis/blob/master/explainer.adoc#writing-to-the-clipboard
-  //
-  // Why is it here? To ensure:
-  // 1. the element is able to have focus and selection.
-  // 2. if element was to flash render it has minimal visual impact.
-  // 3. less flakyness with selection and copying which **might** occur if
-  //    the textarea element is not visible.
-  //
-  // The likelihood is the element won't even render, not even a flash,
-  // so some of these are just precautions. However in IE the element
-  // is visible whilst the popup box asking the user for permission for
-  // the web page to copy to the clipboard.
-  //
-  // Place in top-left corner of screen regardless of scroll position.
+/**
+ * *** This styling is an extra step which is likely not required. ***
+ * https://github.com/w3c/clipboard-apis/blob/master/explainer.adoc#writing-to-the-clipboard
+ * 
+ * Why is it here? To ensure:
+ * 
+ * 1. the element is able to have focus and selection.
+ * 2. if element was to flash render it has minimal visual impact.
+ * 3. less flakyness with selection and copying which **might** occur if
+ *     the textarea element is not visible.
+ *
+ *   The likelihood is the element won't even render, not even a flash,
+ *   so some of these are just precautions. However in IE the element
+ *   is visible whilst the popup box asking the user for permission for
+ *   the web page to copy to the clipboard.
+ *  
+ *   Place in top-left corner of screen regardless of scroll position.
+ *
+ * @typedef CopyTextToClipboard
+ * @property {(text: string, method?: (isCopy: boolean) => void) => void} void
+ * @returns {void}
+ * 
+ * @param {string} text 
+ * @param {CopyTextToClipboard} cb 
+ */
+export default function copyTextToClipboard(text, cb) {
   const el = document.createElement('textarea');
   el.value = text;
   el.setAttribute('readonly', '');
@@ -40,5 +48,3 @@ function copyTextToClipboard(text, cb) {
   }
   cb && cb(isCopy);
 };
-
-export default copyTextToClipboard;

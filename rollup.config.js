@@ -1,6 +1,8 @@
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
+import commonjs from '@rollup/plugin-commonjs';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import { terser } from 'rollup-plugin-terser';
 import banner from 'bannerjs';
+
 import pkg from './package.json';
 
 export default [
@@ -12,13 +14,28 @@ export default [
       file: pkg.browser,
       format: 'umd',
       banner: banner.multibanner(),
+      sourcemap: true,
     },
     plugins: [
-      resolve(), // so Rollup can find `ms`
+      nodeResolve(), // so Rollup can find `ms`
       commonjs() // so Rollup can convert `ms` to an ES module
     ]
   },
-
+  {
+    input: 'src/main.js',
+    output: {
+      file: 'dist/copy-to-clipboard.umd.min.js',
+      format: 'umd',
+      name: 'copyTextToClipboard',
+      banner: banner.onebanner(),
+      sourcemap: true
+    },
+    plugins: [
+      nodeResolve(), // so Rollup can find `ms`
+      commonjs(), // so Rollup can convert `ms` to an ES module
+      terser(),
+    ]
+  },
   // CommonJS (for Node) and ES module (for bundlers) build.
   // (We could have three entries in the configuration array
   // instead of two, but it's quicker to generate multiple
@@ -29,8 +46,9 @@ export default [
     input: 'src/main.js',
     external: ['ms'],
     output: [
-      { file: pkg.main, format: 'cjs', banner: banner.multibanner() },
-      { file: pkg.module, format: 'es', banner: banner.multibanner() }
+      // { file: pkg.main, format: 'umd', banner: banner.multibanner() },
+      { file: pkg.main, format: 'cjs', banner: banner.multibanner(), exports: 'auto' },
+      { file: pkg.module, format: 'es', banner: banner.multibanner(), exports: 'auto' }
     ]
   }
 ];

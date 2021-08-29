@@ -2,8 +2,8 @@
  * @uiw/copy-to-clipboard v1.0.11
  * Copy to clipboard.
  * 
- * Copyright (c) 2020 Kenny Wang
- * https://github.com/uiw-react/copy-to-clipboard.git
+ * Copyright (c) 2021 Kenny Wang
+ * https://github.com/uiwjs/copy-to-clipboard.git
  * 
  * Licensed under the MIT license.
  */
