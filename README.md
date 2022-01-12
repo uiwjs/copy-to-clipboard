@@ -1,12 +1,11 @@
 copy text to clipboard
----
+===
 
-[![Build](https://github.com/uiwjs/copy-to-clipboard/workflows/Build/badge.svg)](https://github.com/uiwjs/copy-to-clipboard/actions)
 ![No Dependencies](http://jaywcjlove.github.io/sb/status/no-dependencies.svg)
-[![Issues](https://img.shields.io/github/issues/uiwjs/copy-to-clipboard.svg)](https://github.com/uiwjs/copy-to-clipboard/issues)
-[![Forks](https://img.shields.io/github/forks/uiwjs/copy-to-clipboard.svg)](https://github.com/uiwjs/copy-to-clipboard/network)
-[![Stars](https://img.shields.io/github/stars/uiwjs/copy-to-clipboard.svg)](https://github.com/uiwjs/copy-to-clipboard/stargazers)
-[![Releases](https://img.shields.io/github/release/uiwjs/copy-to-clipboard.svg)](https://github.com/uiwjs/copy-to-clipboard/releases)
+[![NPM Downloads](https://img.shields.io/npm/dm/@uiw/copy-to-clipboard.svg?style=flat)](https://www.npmjs.com/package/@uiw/copy-to-clipboard)
+[![Build & Deploy](https://github.com/uiwjs/copy-to-clipboard/workflows/Build/badge.svg)](https://github.com/uiwjs/react-codemirror/actions)
+[![Open in unpkg](https://img.shields.io/badge/Open%20in-unpkg-blue)](https://uiwjs.github.io/npm-unpkg/#/pkg/@uiw/copy-to-clipboard/file/README.md)
+[![npm version](https://img.shields.io/npm/v/@uiw/copy-to-clipboard.svg)](https://www.npmjs.com/package/@uiw/copy-to-clipboard)
 
 **This styling is an extra step which is likely not required.**
 
