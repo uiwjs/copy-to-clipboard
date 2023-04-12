@@ -1,11 +1,13 @@
-/*!
- * @uiw/copy-to-clipboard v1.0.12
- * Copy to clipboard.
+/**! 
+ * @uiw/copy-to-clipboard v1.0.12 
+ * Copy to clipboard. 
  * 
- * Copyright (c) 2022 Kenny Wang
- * https://github.com/uiwjs/copy-to-clipboard.git
+ * Copyright (c) 2023 Kenny Wang 
+ * https://github.com/uiwjs/copy-to-clipboard.git 
  * 
- * Licensed under the MIT license.
+ * @website: https://github.com/uiwjs/copy-to-clipboard.git
+ 
+ * Licensed under the MIT license 
  */
 
 /**

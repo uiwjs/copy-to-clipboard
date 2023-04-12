@@ -1,18 +1,20 @@
-/*!
- * @uiw/copy-to-clipboard v1.0.12
- * Copy to clipboard.
+/**! 
+ * @uiw/copy-to-clipboard v1.0.12 
+ * Copy to clipboard. 
  * 
- * Copyright (c) 2022 Kenny Wang
- * https://github.com/uiwjs/copy-to-clipboard.git
+ * Copyright (c) 2023 Kenny Wang 
+ * https://github.com/uiwjs/copy-to-clipboard.git 
  * 
- * Licensed under the MIT license.
+ * @website: https://github.com/uiwjs/copy-to-clipboard.git
+ 
+ * Licensed under the MIT license 
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.copyTextToClipboard = factory());
-}(this, (function () { 'use strict';
+})(this, (function () { 'use strict';
 
   /**
    * *** This styling is an extra step which is likely not required. ***
@@ -67,5 +69,5 @@
 
   return copyTextToClipboard;
 
-})));
+}));
 //# sourceMappingURL=copy-to-clipboard.umd.js.map
