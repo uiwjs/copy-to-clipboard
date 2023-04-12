@@ -5,7 +5,7 @@
  * Copyright (c) 2023 Kenny Wang 
  * https://github.com/uiwjs/copy-to-clipboard.git 
  * 
- * @website: https://github.com/uiwjs/copy-to-clipboard.git
+ * @website: https://uiwjs.github.io/copy-to-clipboard
  
  * Licensed under the MIT license 
  */
