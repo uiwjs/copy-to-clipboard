@@ -16,8 +16,8 @@ jobs:
       - run: npm install
       - run: npm run build
 
-      - run: npm i markdown-to-html-cli -g
-      - run: markdown-to-html --output dist/index.html
+      - run: npm install idoc@1.26.6 -g
+      - run: idoc -s "Copy Text to Clipboard {{version}}"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
