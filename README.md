@@ -1,4 +1,4 @@
-copy text to clipboard
+Copy Text to Clipboard
 ===
 
 ![No Dependencies](http://jaywcjlove.github.io/sb/status/no-dependencies.svg)
@@ -6,7 +6,7 @@ copy text to clipboard
 [![Build & Deploy](https://github.com/uiwjs/copy-to-clipboard/workflows/Build/badge.svg)](https://github.com/uiwjs/react-codemirror/actions)
 [![Open in unpkg](https://img.shields.io/badge/Open%20in-unpkg-blue)](https://uiwjs.github.io/npm-unpkg/#/pkg/@uiw/copy-to-clipboard/file/README.md)
 [![npm version](https://img.shields.io/npm/v/@uiw/copy-to-clipboard.svg)](https://www.npmjs.com/package/@uiw/copy-to-clipboard)
-[![Repo Dependents](https://badgen.net/github/dependents-repo/uiwjs/copy-to-clipboard)](https://github.com/jaywcjlove/rehype-rewrite/network/dependents)
+[![Repo Dependents](https://badgen.net/github/dependents-repo/uiwjs/copy-to-clipboard)](https://github.com/uiwjs/copy-to-clipboard/network/dependents)
 
 **This styling is an extra step which is likely not required.**
 
