@@ -24,6 +24,7 @@
  * @param {CopyTextToClipboard} cb 
  */
 export default function copyTextToClipboard(text, cb) {
+  if (typeof document === "undefined") return;
   const el = document.createElement('textarea');
   el.value = text;
   el.setAttribute('readonly', '');

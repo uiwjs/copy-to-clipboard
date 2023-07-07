@@ -1,11 +1,11 @@
 /**! 
- * @uiw/copy-to-clipboard v1.0.12 
+ * @uiw/copy-to-clipboard v1.0.14 
  * Copy to clipboard. 
  * 
  * Copyright (c) 2023 Kenny Wang 
  * https://github.com/uiwjs/copy-to-clipboard.git 
  * 
- * @website: https://github.com/uiwjs/copy-to-clipboard.git
+ * @website: https://uiwjs.github.io/copy-to-clipboard
  
  * Licensed under the MIT license 
  */
@@ -42,6 +42,7 @@
    * @param {CopyTextToClipboard} cb 
    */
   function copyTextToClipboard(text, cb) {
+    if (typeof document === "undefined") return;
     const el = document.createElement('textarea');
     el.value = text;
     el.setAttribute('readonly', '');
