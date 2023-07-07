@@ -1,6 +1,6 @@
 {
   "name": "@uiw/copy-to-clipboard",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Copy to clipboard.",
   "main": "dist/copy-to-clipboard.cjs.js",
   "module": "dist/copy-to-clipboard.esm.js",
