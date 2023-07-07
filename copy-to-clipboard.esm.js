@@ -36,6 +36,7 @@
  * @param {CopyTextToClipboard} cb 
  */
 function copyTextToClipboard(text, cb) {
+  if (typeof document === "undefined") return;
   const el = document.createElement('textarea');
   el.value = text;
   el.setAttribute('readonly', '');
