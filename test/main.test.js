@@ -1,5 +1,17 @@
 import copyTextToClipboard from '../src/main';
 
+it('should handle document not available', () => {
+  const text = 'Hello, world!';
+  const mockCb = jest.fn();
+  // Create a spy to replace the document object
+  const documentSpy = jest.spyOn(global, 'document', 'get');
+  documentSpy.mockImplementation(() => undefined);
+  copyTextToClipboard(text, mockCb);
+  expect(mockCb).not.toHaveBeenCalled();
+  // Restore the original document object
+  documentSpy.mockRestore();
+});
+
 test('copyTextToClipboard should copy the text to the clipboard and return true', () => {
   const text = 'Hello, world!';
   const copied = jest.fn();
