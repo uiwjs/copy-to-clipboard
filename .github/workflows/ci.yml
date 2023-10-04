@@ -79,7 +79,11 @@ jobs:
 
       # - run: npm install @jsdevtools/npm-publish -g
       # - run: npm-publish --token="${{ secrets.NPM_TOKEN }}" ./package.json
-      
+      - name: package.json info
+        uses: jaywcjlove/github-action-package@main
+        with:
+          unset: scripts,devDependencies
+
       - name: 📦 @uiw/copy-to-clipboard publish to NPM
         run: npm publish --access public --provenance
         continue-on-error: true
