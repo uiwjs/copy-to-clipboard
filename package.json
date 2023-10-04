@@ -1,6 +1,6 @@
 {
   "name": "@uiw/copy-to-clipboard",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Copy to clipboard.",
   "main": "dist/copy-to-clipboard.cjs.js",
   "module": "dist/copy-to-clipboard.esm.js",
@@ -41,9 +41,7 @@
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-terser": "^0.4.1",
     "bannerjs": "^3.0.1",
-    "rollup": "^3.20.2"
-  },
-  "dependencies": {
+    "rollup": "^3.20.2",
     "tsbb": "^4.2.3"
   }
 }
