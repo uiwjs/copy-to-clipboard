@@ -35,6 +35,8 @@ jobs:
           output: dist/CONTRIBUTORS.svg
           avatarSize: 42
 
+      - run: cp -rp coverage/lcov-report dist
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
