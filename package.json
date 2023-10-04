@@ -8,6 +8,8 @@
   "homepage": "https://uiwjs.github.io/copy-to-clipboard",
   "types": "index.d.ts",
   "scripts": {
+    "test": "tsbb test",
+    "coverage": "tsbb test --coverage --bail",
     "build": "rollup -c rollup.config.mjs",
     "dev": "rollup -c rollup.config.mjs -w"
   },
@@ -41,5 +43,7 @@
     "bannerjs": "^3.0.1",
     "rollup": "^3.20.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "tsbb": "^4.2.3"
+  }
 }

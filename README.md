@@ -7,6 +7,7 @@ Copy Text to Clipboard
 [![Open in unpkg](https://img.shields.io/badge/Open%20in-unpkg-blue)](https://uiwjs.github.io/npm-unpkg/#/pkg/@uiw/copy-to-clipboard/file/README.md)
 [![npm version](https://img.shields.io/npm/v/@uiw/copy-to-clipboard.svg)](https://www.npmjs.com/package/@uiw/copy-to-clipboard)
 [![Repo Dependents](https://badgen.net/github/dependents-repo/uiwjs/copy-to-clipboard)](https://github.com/uiwjs/copy-to-clipboard/network/dependents)
+[![Coverage Status](https://uiwjs.github.io/copy-to-clipboard/badges.svg)](https://uiwjs.github.io/copy-to-clipboard/lcov-report/)
 
 **This styling is an extra step which is likely not required.**
 
@@ -44,6 +45,16 @@ copyTextToClipboard('test', (isCopy) => {
 });
 </script>
 ```
+
+## Contributors
+
+As always, thanks to our amazing contributors!
+
+<a href="https://github.com/uiwjs/copy-to-clipboard/graphs/contributors">
+  <img src="https://uiwjs.github.io/copy-to-clipboard/CONTRIBUTORS.svg" />
+</a>
+
+Made with [contributors](https://github.com/jaywcjlove/github-action-contributors).
 
 ### License
 
