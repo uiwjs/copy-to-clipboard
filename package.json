@@ -1,11 +1,12 @@
 {
   "name": "@uiw/copy-to-clipboard",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Copy to clipboard.",
   "main": "dist/copy-to-clipboard.cjs.js",
   "module": "dist/copy-to-clipboard.esm.js",
   "browser": "dist/copy-to-clipboard.umd.js",
   "homepage": "https://uiwjs.github.io/copy-to-clipboard",
+  "funding": "https://jaywcjlove.github.io/#/sponsor",
   "types": "index.d.ts",
   "scripts": {
     "test": "tsbb test",
