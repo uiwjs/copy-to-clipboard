@@ -1,6 +1,7 @@
 Copy Text to Clipboard
 ===
 
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-048754?logo=buymeacoffee)](https://jaywcjlove.github.io/#/sponsor) 
 ![No Dependencies](http://jaywcjlove.github.io/sb/status/no-dependencies.svg)
 [![NPM Downloads](https://img.shields.io/npm/dm/@uiw/copy-to-clipboard.svg?style=flat)](https://www.npmjs.com/package/@uiw/copy-to-clipboard)
 [![Build & Deploy](https://github.com/uiwjs/copy-to-clipboard/workflows/Build/badge.svg)](https://github.com/uiwjs/react-codemirror/actions)
