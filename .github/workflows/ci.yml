@@ -122,6 +122,9 @@ jobs:
         with:
           unset: scripts,devDependencies
 
+      # npm@v11.5.0+ is required for OIDC support
+      - name: Upgrade npm for OIDC support
+        run: npm install -g npm@latest
       # node@v22.0.0+  
       # https://gist.github.com/jaywcjlove/a178278521a6f72c74525d3f1d9c4bf9
       - run: NODE_AUTH_TOKEN="" npm publish --access public --provenance
