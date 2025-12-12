@@ -122,7 +122,7 @@ jobs:
         with:
           unset: scripts,devDependencies
 
-      # node@v22.0.0+ 
+      # node@v22.0.0+  
       # https://gist.github.com/jaywcjlove/a178278521a6f72c74525d3f1d9c4bf9
       - run: NODE_AUTH_TOKEN="" npm publish --access public --provenance
         name: 📦 @uiw/copy-to-clipboard publish to NPM
