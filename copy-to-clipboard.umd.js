@@ -2,7 +2,7 @@
  * @uiw/copy-to-clipboard v1.0.17 
  * Copy to clipboard. 
  * 
- * Copyright (c) 2024 Kenny Wang 
+ * Copyright (c) 2025 Kenny Wang 
  * https://github.com/uiwjs/copy-to-clipboard.git 
  * 
  * @website: https://uiwjs.github.io/copy-to-clipboard
