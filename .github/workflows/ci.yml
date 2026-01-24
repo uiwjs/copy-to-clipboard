@@ -25,7 +25,7 @@ jobs:
           cat > idoc.yml << EOF
           site: "Copy Text to Clipboard {{version}}"
           description: Copy Text to Clipboard
-          openSource: https://github.com/jaywcjlove/copy-to-clipboard
+          openSource: https://github.com/uiwjs/copy-to-clipboard
           homepage: https://wangchujiang.com/copy-to-clipboard/
           tocs: false
           element: 
