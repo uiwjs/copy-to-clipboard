@@ -115,6 +115,8 @@ jobs:
 
             ${{ steps.changelog.outputs.changelog }}
 
+      - run: rm -rf dist
+      - run: npm run build
       # - run: npm install @jsdevtools/npm-publish -g
       # - run: npm-publish --token="${{ secrets.NPM_TOKEN }}" ./package.json
       - name: package.json info
