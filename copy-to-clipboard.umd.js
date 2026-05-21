@@ -1,5 +1,5 @@
 /**! 
- * @uiw/copy-to-clipboard v1.0.20 
+ * @uiw/copy-to-clipboard v1.0.21 
  * Copy to clipboard. 
  * 
  * Copyright (c) 2026 Kenny Wang 
